@@ -1,9 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 
 const Content = () => {
   return (
-    <main>
-        Content
+    <main className='flex-auto'>
+      <Navbar />
+      Content
     </main>
   )
 }
