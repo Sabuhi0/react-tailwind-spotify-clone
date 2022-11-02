@@ -1,9 +1,16 @@
+import Content from "./components/Content";
+import PlayingBar from "./components/PlayingBar";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
-    <div className="text-2xl text-green-500">
-      Hello Spotify
-    </div>
+    <>
+      <div className="wrapper">
+        <Sidebar />
+        <Content />
+      </div>
+      <PlayingBar />
+    </>
   )
 }
 
