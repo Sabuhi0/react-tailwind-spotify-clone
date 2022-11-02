@@ -2,8 +2,8 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <aside>
-        Sidebar
+    <aside className='w-60'>
+      Sidebar
     </aside>
   )
 }
