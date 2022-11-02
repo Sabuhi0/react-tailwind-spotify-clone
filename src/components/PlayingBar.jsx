@@ -2,9 +2,9 @@ import React from 'react'
 
 const PlayingBar = () => {
   return (
-    <div>
-        PlayingBar
-    </div>
+    <footer className='h-24'>
+      PlayingBar
+    </footer>
   )
 }
 
