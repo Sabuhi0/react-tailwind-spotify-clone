@@ -35,7 +35,7 @@ const Menu = () => {
             <span>
               <Icon name="collection" />
             </span>
-            You Library
+            Your Library
           </Link>
         </li>
       </ul>
