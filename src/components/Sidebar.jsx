@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../src/assets/icons/logo.svg'
+import { Icon } from '../assets/Icons';
 import Menu from './Sidebar/Menu';
 
 const Sidebar = () => {
@@ -9,6 +10,18 @@ const Sidebar = () => {
         <img src={Logo} alt="Spotify" className='w-[131px]' />
       </a>
       <Menu />
+      <nav className='mt-6'>
+        <ul>
+          <li>
+            <a href="" className='py-2 px-6 flex items-center text-sm group text-link font-semibold transition duration-500 hover:text-white'>
+              <span className='w-6 h-6 flex items-center justify-center transition duration-500 group-hover:bg-active bg-white bg-opacity-60 text-black mr-4 rounded-sm'>
+                <Icon name="plus" size={12} />
+              </span>
+              Create Playlist
+            </a>
+          </li>
+        </ul>
+      </nav>
     </aside>
   )
 }
