@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../src/assets/icons/logo.svg'
 import { Icon } from '../assets/Icons';
 import Menu from './Sidebar/Menu';
+import Playlists from './Sidebar/Playlists';
 
 const Sidebar = () => {
   return (
@@ -30,6 +31,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </nav>
+      <Playlists />
     </aside>
   )
 }
