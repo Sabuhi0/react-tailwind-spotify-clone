@@ -20,6 +20,14 @@ const Sidebar = () => {
               Create Playlist
             </a>
           </li>
+          <li>
+            <a href="" className='py-2 px-6 flex items-center text-sm group text-link font-bold transition duration-500 hover:text-white'>
+              <span className='w-6 h-6 flex items-center justify-center transition duration-500 text-white mr-4 bg-gradient-to-br from-purple-700 to-blue-300 opacity-60 group-hover:opacity-100 rounded-sm'>
+                <Icon name="heart" size={12} />
+              </span>
+              Liked Songs
+            </a>
+          </li>
         </ul>
       </nav>
     </aside>
