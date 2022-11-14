@@ -47,6 +47,14 @@ const DownloadIcon = ({ size }) => {
     )
 }
 
+const PrevIcon = ({ size }) => {
+    return (
+        <svg viewBox="0 0 24 24" height={size} width={size} xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+           <path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z" />
+        </svg>
+    )
+}
+
 const Icon = ({ name, size = 24 }) => {
 
     const icons = {
@@ -55,7 +63,8 @@ const Icon = ({ name, size = 24 }) => {
         collection: CollectionIcon,
         plus: PlusIcon,
         heart: HeartIcon,
-        download: DownloadIcon
+        download: DownloadIcon,
+        prev: PrevIcon,
     }
 
     const Component = icons[name]
