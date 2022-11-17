@@ -61,6 +61,16 @@ const Auth = () => {
                 </a>
               )}
             </Menu.Item>
+            <Menu.Item as='div' className={'border-t border-white border-opacity-10'}>
+              {({ active }) => (
+                <a
+                  className={`h-10 flex items-center px-2 text-sm rounded ${active && "bg-white bg-opacity-10"}`}
+                  href="/"
+                >
+                  Log out
+                </a>
+              )}
+            </Menu.Item>
           </Menu.Items>
         </>
       )}
