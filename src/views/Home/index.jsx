@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react"
+import Section from "../Home/components/Shelf/index"
 
 const Home = () => {
   return (
     <div>
-      Home page
+      <Section title="Your top mixes" />
     </div>
   )
 }
 
-export default Home;
+export default Home
