@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Shelf = () => {
+const Shelf = ( {title} ) => {
   return (
     <section>
-      <header>
-        <h2></h2>
+      <header className='flex items-center justify-between'>
+        <h2 className='text-2xl font-bold'>{title}</h2>
       </header>
     </section>
   )
