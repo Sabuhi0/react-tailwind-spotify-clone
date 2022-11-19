@@ -4,7 +4,7 @@ import Section from "../Home/components/Shelf/index"
 const Home = () => {
   return (
     <div>
-      <Section title="Your top mixes" />
+      <Section title="Your top mixes" more="/blabla" />
     </div>
   )
 }
