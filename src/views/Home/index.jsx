@@ -40,12 +40,11 @@ const Home = () => {
     },
   ]
   return (
-    <div>
-      <Section
-        title="Your top mixes"
-        more="/blabla"
-        items={items}
-      />
+    <div className="grid gap-y-6">
+      <Section title="Your top mixes" more="/blabla" items={items} />
+      <Section title="Recently played" more="/blabla" items={items} />
+      <Section title="Chill" more="/blabla" items={items} />
+      <Section title="Popular albums" more="/blabla" items={items} />
     </div>
   )
 }
