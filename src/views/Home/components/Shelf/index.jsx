@@ -16,7 +16,7 @@ const Shelf = ({ title, more = false, items }) => {
   }
 
   return (
-    <section>
+    <section className="mb-2">
       <header className="flex items-center justify-between mb-4">
         <h2 className="text-2xl font-bold tracking-tight hover:underline">
           <NavLink to={more ?? '#'}>{title}</NavLink>
