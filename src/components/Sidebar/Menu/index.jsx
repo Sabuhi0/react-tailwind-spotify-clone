@@ -33,7 +33,7 @@ const Menu = () => {
         <li>
           <Link to="/collection" className={`${splitLocation[1] === "collection" ? "text-active" : ""} h-10 flex gap-x-4 items-center text-sm text-link font-semibold hover:text-white px-4`}>
             <span>
-              <Icon name="collection" />
+              { splitLocation[1] === "collection"? <Icon name="activeCollectionIcon" /> : <Icon name="collection" /> }
             </span>
             Your Library
           </Link>
