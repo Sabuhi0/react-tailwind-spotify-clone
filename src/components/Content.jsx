@@ -7,9 +7,9 @@ import Collection from '../views/Collection';
 
 const Content = () => {
   return (
-    <main className='flex-auto'>
+    <main className='flex-auto overflow-auto'>
       <Navbar />
-      <div className='px-8 pt-6'>
+      <div className='px-8 py-6'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
