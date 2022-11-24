@@ -24,8 +24,8 @@ const Menu = () => {
         </li>
         <li>
           <Link to="/search" className={`${splitLocation[1] === "search" ? "text-active" : ""} h-10 flex gap-x-4 items-center text-sm text-link font-semibold hover:text-white px-4`}>
-            <span>
-              <Icon name="search" />
+             <span>
+              { splitLocation[1] === "search" ? <Icon name="activeSearchIcon" /> : <Icon name="search" /> }
             </span>
             Search
           </Link>
