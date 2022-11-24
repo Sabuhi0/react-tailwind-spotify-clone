@@ -80,6 +80,19 @@ const ExternalIcon = ({ size }) => {
     )
 }
 
+const PlayIcon = ({ size }) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      height={size}
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z" />
+    </svg>
+  )
+}
+
 const Icon = ({ name, size = 24 }) => {
 
     const icons = {
@@ -92,7 +105,8 @@ const Icon = ({ name, size = 24 }) => {
         prev: PrevIcon,
         next: NextIcon,
         downDir: DownDirIcon,
-        external: ExternalIcon
+        external: ExternalIcon,
+        play: PlayIcon
     }
 
     const Component = icons[name]
