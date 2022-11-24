@@ -17,7 +17,7 @@ const Menu = () => {
         <li>
           <Link to="/" className={`${splitLocation[1] === "" ? "!text-active" : ""} h-10 flex gap-x-4 items-center text-sm text-link font-semibold hover:text-white px-4`}>
             <span>
-              <Icon name="home" />
+              { splitLocation[1] === "" ? <Icon name="activeHomeIcon" /> : <Icon name="home" /> }
             </span>
             Home
           </Link>
