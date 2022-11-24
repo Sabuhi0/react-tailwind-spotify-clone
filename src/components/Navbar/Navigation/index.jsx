@@ -13,7 +13,7 @@ const Navigation = () => {
         <Icon name="prev" size={22} />
       </button>
       <button onClick={() => navigate(1)} className='w-8 h-8 flex items-center justify-center rounded-full bg-black bg-opacity-70'>
-        <Icon name="next" size={22} />
+        <Icon name="next" size={22}/>
       </button>
     </div>
   )
