@@ -158,6 +158,19 @@ const PauseIcon = ({ size }) => {
   )
 }
 
+const PlayerPrevIcon = ({ size }) => {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      height={size}
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z" />
+    </svg>
+  )
+}
+
 const Icon = ({ name, size = 24 }) => {
 
     const icons = {
@@ -175,7 +188,8 @@ const Icon = ({ name, size = 24 }) => {
         downDir: DownDirIcon,
         external: ExternalIcon,
         play: PlayIcon,
-        pause: PauseIcon
+        pause: PauseIcon,
+        playerPrev: PlayerPrevIcon,
     }
 
     const Component = icons[name]
