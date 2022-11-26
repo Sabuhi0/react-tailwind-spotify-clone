@@ -231,7 +231,7 @@ const Icon = ({ name, size = 24 }) => {
         pause: PauseIcon,
         playerPrev: PlayerPrevIcon,
         playerNext: PlayerNextIcon,
-        shuffleIcon: ShuffleIcon,
+        shuffle: ShuffleIcon,
         repeat: RepeatIcon
     }
 
