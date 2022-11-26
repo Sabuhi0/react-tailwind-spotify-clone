@@ -215,11 +215,11 @@ const Icon = ({ name, size = 24 }) => {
 
     const icons = {
         home: HomeIcon,
-        activeHomeIcon: ActiveHomeIcon,
+        activeHome: ActiveHomeIcon,
         search: SearchIcon,
-        activeSearchIcon: ActiveSearchIcon,
+        activeSearch: ActiveSearchIcon,
         collection: CollectionIcon,
-        activeCollectionIcon: ActiveCollectionIcon,
+        activeCollection: ActiveCollectionIcon,
         plus: PlusIcon,
         heart: HeartIcon,
         download: DownloadIcon,

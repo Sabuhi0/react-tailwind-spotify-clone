@@ -17,7 +17,7 @@ const Menu = () => {
         <li>
           <Link to="/" className={`${splitLocation[1] === "" ? "!text-active" : ""} h-10 flex gap-x-4 items-center text-sm text-link font-semibold hover:text-white px-4`}>
             <span>
-              { splitLocation[1] === "" ? <Icon name="activeHomeIcon" /> : <Icon name="home" /> }
+              { splitLocation[1] === "" ? <Icon name="activeHome" /> : <Icon name="home" /> }
             </span>
             Home
           </Link>
@@ -25,7 +25,7 @@ const Menu = () => {
         <li>
           <Link to="/search" className={`${splitLocation[1] === "search" ? "text-active" : ""} h-10 flex gap-x-4 items-center text-sm text-link font-semibold hover:text-white px-4`}>
              <span>
-              { splitLocation[1] === "search" ? <Icon name="activeSearchIcon" /> : <Icon name="search" /> }
+              { splitLocation[1] === "search" ? <Icon name="activeSearch" /> : <Icon name="search" /> }
             </span>
             Search
           </Link>
@@ -33,7 +33,7 @@ const Menu = () => {
         <li>
           <Link to="/collection" className={`${splitLocation[1] === "collection" ? "text-active" : ""} h-10 flex gap-x-4 items-center text-sm text-link font-semibold hover:text-white px-4`}>
             <span>
-              { splitLocation[1] === "collection"? <Icon name="activeCollectionIcon" /> : <Icon name="collection" /> }
+              { splitLocation[1] === "collection"? <Icon name="activeCollection" /> : <Icon name="collection" /> }
             </span>
             Your Library
           </Link>
