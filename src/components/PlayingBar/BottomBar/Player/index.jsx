@@ -16,7 +16,7 @@ const Player = () => {
             <Icon size={16} name="playerPrev"/>
           </button>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100 bg-white rounded-full hover:transform hover:scale-105 transition duration-150 ease-in-out'>
-            <Icon size={16} name="play"/>
+            <Icon size={20} name="play"/>
           </button>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
             <Icon size={16} name="playerNext"/>
