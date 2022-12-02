@@ -1,7 +1,7 @@
 import React from "react"
-import Auth from "./Navbar/Auth"
+import Auth from "./Auth"
 import { useLocation } from "react-router-dom"
-import Navigation from "./Navbar/Navigation"
+import Navigation from "./Navigation"
 
 const Navbar = () => {
   const location = useLocation()

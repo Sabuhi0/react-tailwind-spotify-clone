@@ -1,9 +1,9 @@
 import React from 'react'
-import Logo from '../../src/assets/icons/logo.svg'
-import { Icon } from '../assets/Icons';
-import DownloadApp from './Sidebar/DownloadApp';
-import Menu from './Sidebar/Menu';
-import Playlists from './Sidebar/Playlists';
+import Logo from '../../assets/icons/logo.svg'
+import { Icon } from '../../assets/Icons';
+import DownloadApp from './DownloadApp';
+import Playlists from './Playlists';
+import Menu from './Menu';
 
 const Sidebar = () => {
   return (
