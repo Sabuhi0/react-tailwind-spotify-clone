@@ -263,6 +263,20 @@ const VolumeMutedIcon = ({ size }) => {
   )
 }
 
+const VolumeLowIcon = ({ size }) => {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      height={size}
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+    >
+      <path d="M9.741.85a.75.75 0 01.375.65v13a.75.75 0 01-1.125.65l-6.925-4a3.642 3.642 0 01-1.33-4.967 3.639 3.639 0 011.33-1.332l6.925-4a.75.75 0 01.75 0zm-6.924 5.3a2.139 2.139 0 000 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 010 4.88z" />
+    </svg>
+  )
+}
+
 const Icon = ({ name, size = 24 }) => {
 
     const icons = {
@@ -289,6 +303,7 @@ const Icon = ({ name, size = 24 }) => {
         queue: QueueIcon,
         pictureInPicture: PictureInPictureIcon,
         volumeMuted: VolumeMutedIcon,
+        volumeLowIcon: VolumeLowIcon
     }
 
     const Component = icons[name]
