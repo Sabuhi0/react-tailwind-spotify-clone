@@ -1,9 +1,8 @@
 import React from 'react'
 import { Icon } from '../../../../assets/Icons'
-import { Range, getTrackBackground } from "react-range";
-import { useState } from 'react';
 import { useAudio } from 'react-use';
 import secondsToTime from '../../../../utils/secondsToTime';
+import CustomRange from '../CustomRange';
 
 const Player = () => {
 
@@ -44,46 +43,12 @@ const Player = () => {
           <div className='text-[0.6875rem] text-[#a7a7a7]'>
             {secondsToTime(state ?.time)}
           </div>
-          <Range
-            values={[state ?.time]}
-            step={STEP}
-            min={MIN}
-            max={state?.duration || 1}
-            onChange={(values) => controls.seek(values[0])}
-            renderTrack={({ props, children }) => (
-              <div
-                onMouseDown={props.onMouseDown}
-                onTouchStart={props.onTouchStart}
-                className="w-full h-7 flex group"
-                style={props.style}
-              >
-                <div
-                  ref={props.ref}
-                  className="h-1 w-full rounded-md self-center"
-                  style={{
-                    background: getTrackBackground({
-                      values: [state ?.time],
-                      colors: ["#fff", "#5e5e5e"],
-                      min: MIN,
-                      max: state?.duration || 1
-                    }),
-                  }}
-                > 
-                  {children} 
-                </div>
-              </div>
-            )}
-            renderThumb={({ props, isDragged }) => (
-              <div
-                {...props}
-                className={`h-3 w-3 rounded-full bg-white ${!isDragged ? 'opacity-0' : '' } group-hover:opacity-100`}
-                style={{
-                  ...props.style,
-                  boxShadow: "0 2px 4px 0 rgb(0 0 0 / 50%)"
-                }}
-              >
-              </div>
-            )}
+          <CustomRange
+            step={0.1}
+            min={0}
+            max={state ?.duration || 1}
+            value={state?.time}
+            onChange={value => controls.seek(value)}
           />
           <div className='text-[0.6875rem] text-[#a7a7a7]'>
             {secondsToTime(state ?.duration)}
