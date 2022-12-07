@@ -3,7 +3,7 @@ import Player from './BottomBar/Player';
 
 const PlayingBar = () => {
   return (
-    <footer className='bg-footer border-[#282828] border-t'>
+    <footer className='bg-footer h-24 border-[#282828] border-t'>
       <Player />
     </footer>
   )
