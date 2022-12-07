@@ -13,12 +13,12 @@ const CustomRange = ({ value, step, max, min, onChange }) => {
         <div
           onMouseDown={props.onMouseDown}
           onTouchStart={props.onTouchStart}
-          className="w-full h-7 flex group"
+          className="w-full h-7 flex group !cursor-auto"
           style={props.style}
         >
           <div
             ref={props.ref}
-            className="h-1 w-full rounded-md self-center"
+            className="h-1 w-full rounded-md self-center !cursor-auto"
             style={{
               background: getTrackBackground({
                 values: [value],
@@ -35,7 +35,7 @@ const CustomRange = ({ value, step, max, min, onChange }) => {
       renderThumb={({ props, isDragged }) => (
         <div
           {...props}
-          className={`h-3 w-3 rounded-full bg-white ${!isDragged ? 'opacity-0' : ''} group-hover:opacity-100`}
+          className={`h-3 w-3 rounded-full !cursor-auto bg-white ${!isDragged ? 'opacity-0' : ''} group-hover:opacity-100`}
           style={{
             ...props.style,
             boxShadow: "0 2px 4px 0 rgb(0 0 0 / 50%)"
