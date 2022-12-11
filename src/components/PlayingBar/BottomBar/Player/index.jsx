@@ -7,8 +7,7 @@ import { useMemo } from 'react';
 
 const Player = () => {
 
-  const STEP = 0.1;
-  const MIN = 0;
+  
 
   const [audio, state, controls, ref] = useAudio({
     src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
