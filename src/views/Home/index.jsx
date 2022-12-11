@@ -6,7 +6,7 @@ const Home = () => {
     {
       id: 1,
       title: "Ice for Aureliano Buendia (Deluxe Edition)",
-      description: "2013 Tom Odell",
+      description: "Tom Odell",
       image: "https://i.scdn.co/image/ab67616d00001e021917a0f3f4152622a040913f",
       type: "album",
       src: "https://il.ilill.li/live/U0oLB0kl_I/"
@@ -38,7 +38,7 @@ const Home = () => {
     {
       id: 5,
       title: "Another Love",
-      description: "2013 Tom Odell",
+      description: "Tom Odell",
       image: "https://i.scdn.co/image/ab67616d00001e021917a0f3f4152622a040913f",
       type: "album",
       src: "https://il.ilill.li/live/U0oLB0kl_I/"
