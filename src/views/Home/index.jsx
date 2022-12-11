@@ -9,7 +9,7 @@ const Home = () => {
       description: "Tom Odell",
       image: "https://i.scdn.co/image/ab67616d00001e021917a0f3f4152622a040913f",
       type: "album",
-      src: "https://il.ilill.li/live/U0oLB0kl_I/"
+      src: "https://cdn.freesound.org/previews/448/448163_9015615-lq.mp3"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Home = () => {
       description: "Songs for a broken heart",
       image: "https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628",
       type: "album",
-      src: "https://il.ilill.li/live/U0oLB0kl_I/"
+      src: "https://cdn.freesound.org/previews/173/173561_2069175-lq.mp3"
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const Home = () => {
       description: "Artist",
       image: "https://i.scdn.co/image/ab6761610000f17868f6e5892075d7f22615bd17",
       type: "artist",
-      src: "https://il.ilill.li/live/U0oLB0kl_I/"
+      src: "https://cdn.freesound.org/previews/448/448163_9015615-lq.mp3"
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const Home = () => {
       description: "Songs for a broken heart",
       image: "https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628",
       type: "podcast",
-      src: "https://il.ilill.li/live/U0oLB0kl_I/"
+      src: "https://cdn.freesound.org/previews/173/173561_2069175-lq.mp3"
     },
     {
       id: 5,
@@ -41,7 +41,7 @@ const Home = () => {
       description: "Tom Odell",
       image: "https://i.scdn.co/image/ab67616d00001e021917a0f3f4152622a040913f",
       type: "album",
-      src: "https://il.ilill.li/live/U0oLB0kl_I/"
+      src: "https://cdn.freesound.org/previews/448/448163_9015615-lq.mp3"
     },
   ]
   return (
