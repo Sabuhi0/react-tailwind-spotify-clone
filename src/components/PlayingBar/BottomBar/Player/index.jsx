@@ -40,9 +40,27 @@ const Player = () => {
   return (
     <div className='flex items-center justify-between px-4 h-full'>
       <div className='min-w-[11.25rem] w-[30%]'>
-        sol
+        {current && (
+          <div className='flex items-center'>
+            <div className='flex items-center mr-3'>
+              <div className='w-14 h-14 flex-shrink-0'>
+                <img src={current.image} />
+              </div>
+              <div className='mx-[14px]'>
+                <h3 className='text-sm line-clamp-1'>{current.title}</h3>
+                <p className='text-[0.6875rem] text-[#a7a7a7] font-semibold'>{current.artist}</p>
+              </div>
+            </div>
+            <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
+              <Icon size={16} name="heartFilled" />
+            </button>
+            <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
+              <Icon size={16} name="pictureInPicture" />
+            </button>
+          </div>
+        )}
       </div>
-      <div className='max-w-[45.125rem] w-[40%] flex flex-col items-center'>
+      <div className='max-w-[45.125rem] w-[40%] flex flex-col px-4 items-center'>
         <div className='flex items-center gap-x-2'>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
             <Icon size={16} name="shuffle"/>
