@@ -9,6 +9,7 @@ const Home = () => {
       description: "2013 Tom Odell",
       image: "https://i.scdn.co/image/ab67616d00001e021917a0f3f4152622a040913f",
       type: "album",
+      src: "https://il.ilill.li/live/U0oLB0kl_I/"
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ const Home = () => {
       description: "Songs for a broken heart",
       image: "https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628",
       type: "album",
+      src: "https://il.ilill.li/live/U0oLB0kl_I/"
     },
     {
       id: 3,
@@ -23,6 +25,7 @@ const Home = () => {
       description: "Artist",
       image: "https://i.scdn.co/image/ab6761610000f17868f6e5892075d7f22615bd17",
       type: "artist",
+      src: "https://il.ilill.li/live/U0oLB0kl_I/"
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ const Home = () => {
       description: "Songs for a broken heart",
       image: "https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628",
       type: "podcast",
+      src: "https://il.ilill.li/live/U0oLB0kl_I/"
     },
     {
       id: 5,
@@ -37,6 +41,7 @@ const Home = () => {
       description: "2013 Tom Odell",
       image: "https://i.scdn.co/image/ab67616d00001e021917a0f3f4152622a040913f",
       type: "album",
+      src: "https://il.ilill.li/live/U0oLB0kl_I/"
     },
   ]
   return (
