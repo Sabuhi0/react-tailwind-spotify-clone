@@ -98,6 +98,14 @@ const HeartFilledIcon = ({ size }) => {
     )
 }
 
+const ArrowUpIcon = ({ size }) => {
+  return (
+    <svg viewBox="0 0 16 16" height={size} width={size} xmlns="http://www.w3.org/2000/svg">
+      <path d="M.47 11.03a.75.75 0 001.06 0L8 4.56l6.47 6.47a.75.75 0 101.06-1.06L8 2.44.47 9.97a.75.75 0 000 1.06z" fill="currentColor" />
+    </svg>
+  )
+}
+
 const DownloadIcon = ({ size }) => {
     return (
         <svg viewBox="0 0 24 24" height={size} width={size} xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -352,6 +360,7 @@ const Icon = ({ name, size = 24 }) => {
         plus: PlusIcon,
         heart: HeartIcon,
         heartFilled: HeartFilledIcon,
+        arrowUp: ArrowUpIcon,
         download: DownloadIcon,
         prev: PrevIcon,
         next: NextIcon,
