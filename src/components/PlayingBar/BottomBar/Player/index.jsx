@@ -5,21 +5,25 @@ import secondsToTime from '../../../../utils/secondsToTime';
 import CustomRange from '../CustomRange';
 import { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setControls } from '../../../../stores/player';
+import { setControls, setPlaying, setSidebar } from '../../../../stores/player';
 import { useEffect } from 'react';
 
 const Player = () => {
 
   const dispatch = useDispatch()
-  const { current } = useSelector(state => state.player)
+  const { current, sidebar } = useSelector(state => state.player)
 
   const [audio, state, controls, ref] = useAudio({
-    src: current ?.src
+    src: current?.src
   });
 
   useEffect(() => {
     controls.play();
   }, [current])
+
+  useEffect(() => {
+    dispatch(setPlaying(state.playing))
+  }, [state.playing])
 
   useEffect(() => {
     dispatch(setControls(controls));
@@ -43,9 +47,16 @@ const Player = () => {
         {current && (
           <div className='flex items-center'>
             <div className='flex items-center mr-3'>
-              <div className='w-14 h-14 flex-shrink-0'>
-                <img src={current.image} />
-              </div>
+              {!sidebar && (
+                <div className='w-14 h-14 relative group flex-shrink-0'>
+                  <img src={current.image} />
+                  <button
+                    onClick={() => dispatch(setSidebar(true))}
+                    className='w-6 h-6 flex items-center justify-center bg-black rounded-full opacity-0 group-hover:opacity-70 hover:!opacity-80 hover:scale-110 absolute right-1 top-1'>
+                    <Icon name="arrowUp" size={16}/>
+                  </button>
+                </div>
+              )}
               <div className='mx-[14px]'>
                 <h3 className='text-sm line-clamp-1'>{current.title}</h3>
                 <p className='text-[0.6875rem] text-[#a7a7a7] font-semibold'>{current.artist}</p>
@@ -63,37 +74,37 @@ const Player = () => {
       <div className='max-w-[45.125rem] w-[40%] flex flex-col px-4 items-center'>
         <div className='flex items-center gap-x-2'>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
-            <Icon size={16} name="shuffle"/>
+            <Icon size={16} name="shuffle" />
           </button>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
-            <Icon size={16} name="playerPrev"/>
+            <Icon size={16} name="playerPrev" />
           </button>
           <button
-            onClick={controls[state ?.playing ? 'pause' : 'play']}
+            onClick={controls[state?.playing ? 'pause' : 'play']}
             className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100 bg-white rounded-full hover:transform hover:scale-105 transition duration-150 ease-in-out'>
-            <Icon size={state ?.playing ? 16 : 20} name={state ?.playing ? 'pause' : 'play'} />
+            <Icon size={state?.playing ? 16 : 20} name={state?.playing ? 'pause' : 'play'} />
           </button>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
-            <Icon size={16} name="playerNext"/>
+            <Icon size={16} name="playerNext" />
           </button>
           <button className='w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100'>
-            <Icon size={16} name="repeat"/>
+            <Icon size={16} name="repeat" />
           </button>
         </div>
         <div className='w-full flex items-center gap-x-2'>
           {audio}
           <div className='text-[0.6875rem] text-[#a7a7a7]'>
-            {secondsToTime(state ?.time)}
+            {secondsToTime(state?.time)}
           </div>
           <CustomRange
             step={0.1}
             min={0}
-            max={state ?.duration || 1}
+            max={state?.duration || 1}
             value={state?.time}
             onChange={value => controls.seek(value)}
           />
           <div className='text-[0.6875rem] text-[#a7a7a7]'>
-            {secondsToTime(state ?.duration)}
+            {secondsToTime(state?.duration)}
           </div>
         </div>
       </div>
