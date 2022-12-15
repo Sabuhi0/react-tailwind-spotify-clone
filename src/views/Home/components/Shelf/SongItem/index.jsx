@@ -7,7 +7,10 @@ import { Icon } from "./../../../../../assets/Icons"
 const SongItem = ({ item }) => {
 
   const dispatch = useDispatch()
-  const { current } = useSelector(state => state.player)
+  const { current, playing, controls } = useSelector(state => state.player)
+
+  const state = useSelector(state => state.player)
+  console.log(state)
 
   const imageStyle = item => {
     switch (item.type) {
@@ -20,8 +23,18 @@ const SongItem = ({ item }) => {
     }
   }
 
+  const isCurrentItem = (current?.id === item.id && playing)
+
   const updateCurrent = () => {
-    dispatch(setCurrent(item))
+    if (current.id === item.id) {
+      if (playing) {
+        controls.pause()
+      } else {
+        controls.play()
+      }
+    } else {
+      dispatch(setCurrent(item))
+    }
   }
 
   return (
@@ -41,8 +54,8 @@ const SongItem = ({ item }) => {
         />
         <button
           onClick={updateCurrent}
-          className="w-12 h-12 rounded-full bg-primary absolute bottom-2 right-2 group-hover:flex group-hover:duration-700 transition ease-in-out items-center justify-center hidden">
-          <Icon name={current ?.id === item.id ? 'pause' : 'play'} size={current ?.id === item.id ? 20 : 22} />
+          className={`w-12 h-12 rounded-full bg-primary absolute bottom-2 right-2 group-hover:flex group-hover:duration-700 transition ease-in-out items-center justify-center ${!isCurrentItem ? 'hidden' : 'flex'}`}>
+          <Icon name={isCurrentItem ? 'pause' : 'play'} size={isCurrentItem ? 20 : 22} />
         </button>
       </div>
       <h1 className="overflow-hidden overflow-ellipsis whitespace-nowrap font-bold">
