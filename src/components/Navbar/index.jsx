@@ -2,6 +2,7 @@ import React from "react"
 import Auth from "./Auth"
 import { useLocation } from "react-router-dom"
 import Navigation from "./Navigation"
+import Search from "./Search"
 
 const Navbar = () => {
   const location = useLocation()
@@ -14,7 +15,7 @@ const Navbar = () => {
     <nav className="h-16 flex items-center justify-between px-8">
       <Navigation />
 
-      {searchRoute[1] === "search" && <div>Search section</div>}
+      {searchRoute[1] === "search" && <Search />}
 
       <Auth />
     </nav>
