@@ -19,7 +19,7 @@ export default [
   },
   {
     id: 4,
-    title: 'Pop',
+    title: 'New releases',
     cover: 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
     color: '#e8115b'
   },
@@ -31,7 +31,7 @@ export default [
   },
   {
     id: 6,
-    title: 'Pop',
+    title: 'Hip-Hop',
     cover: 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
     color: '#bc5900'
   },
