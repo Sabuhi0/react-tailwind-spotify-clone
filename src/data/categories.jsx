@@ -20,7 +20,7 @@ export default [
   {
     id: 4,
     title: 'New releases',
-    cover: 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
+    cover: 'https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112',
     color: '#e8115b'
   },
   {
@@ -31,9 +31,9 @@ export default [
   },
   {
     id: 6,
-    title: 'Hip-Hop',
-    cover: 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
-    color: '#bc5900'
+    title: 'Chill',
+    cover: 'https://i.scdn.co/image/ab67fb8200005caf47e942f5bea637f4f4760170',
+    color: '#d84000'
   },
   {
     id: 7,
@@ -50,7 +50,7 @@ export default [
   {
     id: 9,
     title: 'New releases',
-    cover: 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
+    cover: 'https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112',
     color: '#e8115b'
   },
   {
