@@ -1,7 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import Title from "../../../../components/Title"
-import SongItem from "./SongItem"
+import SongItem from "../../../../components/SongItem"
 
 const Shelf = ({ title, more = false, items }) => {
 
