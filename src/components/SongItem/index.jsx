@@ -9,9 +9,6 @@ const SongItem = ({ item }) => {
   const dispatch = useDispatch()
   const { current, playing, controls } = useSelector(state => state.player)
 
-  const state = useSelector(state => state.player)
-  console.log(state)
-
   const imageStyle = item => {
     switch (item.type) {
       case "artist":
