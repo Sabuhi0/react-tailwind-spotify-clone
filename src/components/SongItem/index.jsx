@@ -65,4 +65,4 @@ const SongItem = ({ item }) => {
   )
 }
 
-export default SongItem
+export default SongItem;
