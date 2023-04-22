@@ -4,7 +4,7 @@ import React from "react";
 
 const Auth = () => {
   const user = {
-    name: "Sabuhi Gasimov",
+    name: "Sabuhi",
     avatar: "https://avatars.githubusercontent.com/u/62444892?v=4",
   };
 
