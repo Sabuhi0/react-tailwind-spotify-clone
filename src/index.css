@@ -13,4 +13,7 @@
         height: calc(100% - theme('spacing.24'));
         @apply flex
     }
+    .border-block-start {
+        border-block-start: 1px solid #232323;
+    }
 }
